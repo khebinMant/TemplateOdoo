@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="template_menu_root"
+        name="template_menu"/>
+
+</odoo>

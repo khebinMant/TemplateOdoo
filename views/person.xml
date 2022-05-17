@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="person_view_form" model="ir.ui.view">
+        <field name="name">person.view.form</field>
+        <field name="model">person</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                    <group>
+                        <field name="name"></field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="person_action" model="ir.actions.act_window">
+        <field name="name">Person</field>
+        <field name="res_model">person</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="person_menu"
+        name="Person"
+        action="person_action"
+        parent="template_menu_root"/>
+</odoo>
